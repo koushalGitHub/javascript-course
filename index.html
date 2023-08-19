@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run JavaScript Files</title>
+</head>
+<body>
+    <button id="buttonMain">Run main.js</button>
+    <button id="buttonVariable">Run 02_variable.js</button>
+
+    <script>
+        document.getElementById('buttonMain').addEventListener('click', function() {
+            loadScript('main.js');
+        });
+
+        document.getElementById('buttonVariable').addEventListener('click', function() {
+            loadScript('./02_variable.js');
+        });
+
+        function loadScript(src) {
+            var script = document.createElement('script');
+            script.src = src;
+            // script.onload = function() {
+            //     // console.log(src);
+            // };
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+</html>
