@@ -8,6 +8,9 @@
 <body>
     <button id="buttonMain">Run main.js</button>
     <button id="buttonVariable">Run 02_variable.js</button>
+    <button id="button_var_let_const">Run 03_var_let_const.js</button>
+    <button id="button_primitives_and_object">Run 04_primitives_and_object.js</button>
+    <button id="button_05_chapter1_practice_set">Run 05_chapter1_practice_set.js</button>
 
     <script>
         document.getElementById('buttonMain').addEventListener('click', function() {
@@ -15,7 +18,19 @@
         });
 
         document.getElementById('buttonVariable').addEventListener('click', function() {
-            loadScript('./02_variable.js');
+            loadScript('02_variable.js');
+        });
+        
+        document.getElementById('button_var_let_const').addEventListener('click', function() {
+            loadScript('03_var_let_const.js');
+        });
+
+        document.getElementById('button_primitives_and_object').addEventListener('click', function() {
+            loadScript('04_primitives_and_object.js');
+        });
+
+        document.getElementById('button_05_chapter1_practice_set').addEventListener('click', function() {
+            loadScript('05_chapter1_practice_set.js');
         });
 
         function loadScript(src) {
