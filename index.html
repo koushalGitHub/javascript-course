@@ -11,6 +11,10 @@
     <button id="button_var_let_const">Run 03_var_let_const.js</button>
     <button id="button_primitives_and_object">Run 04_primitives_and_object.js</button>
     <button id="button_05_chapter1_practice_set">Run 05_chapter1_practice_set.js</button>
+    <button id="button_06_operators_and_expression">Run 06_operators_and_expression.js</button>
+    <button id="button_07_conditional_expression">Run 07_conditional_expression.js</button>
+    <button id="button_09_for_loop">Run 09_for_loop.js</button>
+    <button id="button_10_while_loop">Run 10_while_loop.js</button>
 
     <script>
         document.getElementById('buttonMain').addEventListener('click', function() {
@@ -29,9 +33,18 @@
             loadScript('04_primitives_and_object.js');
         });
 
-        document.getElementById('button_05_chapter1_practice_set').addEventListener('click', function() {
-            loadScript('05_chapter1_practice_set.js');
+        document.getElementById('button_06_operators_and_expression').addEventListener('click', function() {
+            loadScript('06_operators_and_expression.js');
         });
+        document.getElementById('button_07_conditional_expression').addEventListener('click', function() {
+                    loadScript('07_conditional_expression.js');
+                });
+        document.getElementById('button_09_for_loop').addEventListener('click', function() {
+                    loadScript('09_for_loop.js');
+                });
+        document.getElementById('button_10_while_loop').addEventListener('click', function() {
+                            loadScript('10_while_loop.js');
+                        });
 
         function loadScript(src) {
             var script = document.createElement('script');
