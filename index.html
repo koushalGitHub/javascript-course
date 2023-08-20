@@ -15,6 +15,8 @@
     <button id="button_07_conditional_expression">Run 07_conditional_expression.js</button>
     <button id="button_09_for_loop">Run 09_for_loop.js</button>
     <button id="button_10_while_loop">Run 10_while_loop.js</button>
+    <button id="button_11_function">Run 11_function.js</button>
+    <button id="button_12_practice_set_2">Run 12_practice_set_2.js</button>
 
     <script>
         document.getElementById('buttonMain').addEventListener('click', function() {
@@ -45,6 +47,13 @@
         document.getElementById('button_10_while_loop').addEventListener('click', function() {
                             loadScript('10_while_loop.js');
                         });
+        document.getElementById('button_11_function').addEventListener('click', function() {
+                                    loadScript('11_function.js');
+                         });
+       document.getElementById('button_12_practice_set_2').       addEventListener('click', function() {
+                    loadScript('12_practice_set_2.js');
+                         });
+       
 
         function loadScript(src) {
             var script = document.createElement('script');
