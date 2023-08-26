@@ -17,6 +17,10 @@
     <button id="button_10_while_loop">Run 10_while_loop.js</button>
     <button id="button_11_function">Run 11_function.js</button>
     <button id="button_12_practice_set_2">Run 12_practice_set_2.js</button>
+    <button id="button_13_string">Run 13_string.js</button>
+    <button id="button_16_array">Run 16_array.js</button>
+    <button id="button_19_forEach_for_loop">Run 19_forEach_for_loop.js</button>
+    <button id="button_20_map_filter_reduce">Run 20_map_filter_reduce.js</button>
 
     <script>
         document.getElementById('buttonMain').addEventListener('click', function() {
@@ -50,10 +54,23 @@
         document.getElementById('button_11_function').addEventListener('click', function() {
                                     loadScript('11_function.js');
                          });
-       document.getElementById('button_12_practice_set_2').       addEventListener('click', function() {
+       document.getElementById('button_12_practice_set_2').addEventListener('click', function() {
                     loadScript('12_practice_set_2.js');
                          });
+       document.getElementById('button_13_string').addEventListener('click', function() {
+                    loadScript('13_string.js');
+                         });
+       document.getElementById('button_16_array').addEventListener('click', function() {
+                    loadScript('16_array.js');
+                         });
        
+        document.getElementById('button_19_forEach_for_loop').addEventListener('click', function() {
+                    loadScript('19_forEach_for_loop.js');
+                                });
+        document.getElementById('button_20_map_filter_reduce').addEventListener('click', function() {
+                loadScript('20_map_filter_reduce.js');
+                            });
+        
 
         function loadScript(src) {
             var script = document.createElement('script');
