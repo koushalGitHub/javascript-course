@@ -21,6 +21,11 @@
     <button id="button_16_array">Run 16_array.js</button>
     <button id="button_19_forEach_for_loop">Run 19_forEach_for_loop.js</button>
     <button id="button_20_map_filter_reduce">Run 20_map_filter_reduce.js</button>
+    <button id="button_21_pracitce_array">Run 21_pracitce_array.js</button>
+    <button id="button_51_clock">Run 51_clock.js</button>
+    <button id="button_52_callbacks">Run 52_callbacks.js</button>
+    <button id="button_53_callback_hell">Run 53_callback_hell.js</button>
+    <button id="button_54_introduction_promises">Run 54_introduction_promises.js</button>
 
     <script>
         document.getElementById('buttonMain').addEventListener('click', function() {
@@ -70,8 +75,22 @@
         document.getElementById('button_20_map_filter_reduce').addEventListener('click', function() {
                 loadScript('20_map_filter_reduce.js');
                             });
+        document.getElementById('button_21_pracitce_array').addEventListener('click', function() {
+                loadScript('21_pracitce_array.js');
+                            });
         
-
+        document.getElementById('button_51_clock').addEventListener('click',function(){
+            loadScript('51_clock.js')
+        });
+        document.getElementById('button_52_callbacks').addEventListener('click',function(){
+            loadScript('52_callbacks.js')
+        })
+        document.getElementById('button_53_callback_hell').addEventListener('click',function(){
+            loadScript('53_callback_hell.js')
+        });
+        document.getElementById('button_54_introduction_promises').addEventListener('click',function(){
+            loadScript('54_introduction_promises.js')
+        });
         function loadScript(src) {
             var script = document.createElement('script');
             script.src = src;
