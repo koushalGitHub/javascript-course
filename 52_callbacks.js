@@ -43,5 +43,5 @@ doSomethingAsync(callbackFunction);
 /* 
 In this example, doSomethingAsync is a function that simulates an asynchronous operation using setTimeout. It takes a callback function as an argument. When the asynchronous operation is completed (in this case, after a delay of 1000 milliseconds), the provided callback function (callbackFunction) is executed.
 
- */
+*/
 

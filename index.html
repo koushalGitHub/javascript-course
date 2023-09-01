@@ -26,24 +26,22 @@
     <button id="button_52_callbacks">Run 52_callbacks.js</button>
     <button id="button_53_callback_hell">Run 53_callback_hell.js</button>
     <button id="button_54_introduction_promises">Run 54_introduction_promises.js</button>
+    <button id="button_55_then()_catch()">Run 55_then()_catch().js</button>
+    <button id="button_practice">Run practice.js</button>
 
     <script>
         document.getElementById('buttonMain').addEventListener('click', function() {
             loadScript('main.js');
         });
-
         document.getElementById('buttonVariable').addEventListener('click', function() {
             loadScript('02_variable.js');
         });
-        
         document.getElementById('button_var_let_const').addEventListener('click', function() {
             loadScript('03_var_let_const.js');
         });
-
         document.getElementById('button_primitives_and_object').addEventListener('click', function() {
             loadScript('04_primitives_and_object.js');
         });
-
         document.getElementById('button_06_operators_and_expression').addEventListener('click', function() {
             loadScript('06_operators_and_expression.js');
         });
@@ -77,7 +75,7 @@
                             });
         document.getElementById('button_21_pracitce_array').addEventListener('click', function() {
                 loadScript('21_pracitce_array.js');
-                            });
+                           });
         
         document.getElementById('button_51_clock').addEventListener('click',function(){
             loadScript('51_clock.js')
@@ -91,12 +89,15 @@
         document.getElementById('button_54_introduction_promises').addEventListener('click',function(){
             loadScript('54_introduction_promises.js')
         });
+        document.getElementById('button_55_then()_catch()').addEventListener('click',function(){
+            loadScript('55_then()_catch().js')
+        });
+        document.getElementById('button_practice').addEventListener('click',function(){
+            loadScript('practice.js')
+        });
         function loadScript(src) {
             var script = document.createElement('script');
             script.src = src;
-            // script.onload = function() {
-            //     // console.log(src);
-            // };
             document.body.appendChild(script);
         }
     </script>
