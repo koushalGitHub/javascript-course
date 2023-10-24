@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Number to Speech</title>
+</head>
+<body>
+    <h1>Number to Speech</h1>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput">
+    <button id="speakButton">Speak</button>
+
+    <script>
+        // Check if the browser supports the Web Speech API
+        if ('speechSynthesis' in window) {
+            const numberInput = document.getElementById('numberInput');
+            const speakButton = document.getElementById('speakButton');
+
+            speakButton.addEventListener('click', () => {
+                const number = parseFloat(numberInput.value);
+
+                if (!isNaN(number)) {
+                    const textToSpeak = number.toString();
+                    const speech = new SpeechSynthesisUtterance(textToSpeak);
+                    speechSynthesis.speak(speech);
+                } else {
+                    alert('Please enter a valid number.');
+                }
+            });
+        } else {
+            alert('Your browser does not support the Web Speech API. Please use a different browser.');
+        }
+    </script>
+</body>
+</html>
+ -->
+
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Text to Speech</title>
+</head>
+<body>
+    <h1>Text to Speech (Female Voice)</h1>
+    <label for="textInput">Enter text:</label>
+    <input type="text" id="textInput">
+    <button id="speakButton">Speak</button>
+
+    <script>
+        // Check if the browser supports the Web Speech API
+        if ('speechSynthesis' in window) {
+            const textInput = document.getElementById('textInput');
+            const speakButton = document.getElementById('speakButton');
+
+            // Get the list of available voices
+            const voices = window.speechSynthesis.getVoices();
+
+            // Find a female voice (you may need to adjust this based on available voices)
+            const femaleVoice = voices.find(voice => voice.name.includes('female'));
+
+            speakButton.addEventListener('click', () => {
+                const textToSpeak = textInput.value;
+                const speech = new SpeechSynthesisUtterance(textToSpeak);
+
+                // Set the voice to the female voice if found
+                if (femaleVoice) {
+                    speech.voice = femaleVoice;
+                }
+
+                speechSynthesis.speak(speech);
+            });
+        } else {
+            alert('Your browser does not support the Web Speech API. Please use a different browser.');
+        }
+    </script>
+</body>
+</html>

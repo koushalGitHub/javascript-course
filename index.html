@@ -28,6 +28,9 @@
     <button id="button_54_introduction_promises">Run 54_introduction_promises.js</button>
     <button id="button_55_then()_catch()">Run 55_then()_catch().js</button>
     <button id="button_practice">Run practice.js</button>
+    <button id="button_56_then()_call">Run 56_promises_chaining_then()_call.js</button>
+    <button id="button_58_promises_api">Run 58_promises_api.js</button>
+    <button id="button_59_async_await">Run 59_async_await.js</button>
 
     <script>
         document.getElementById('buttonMain').addEventListener('click', function() {
@@ -95,6 +98,18 @@
         document.getElementById('button_practice').addEventListener('click',function(){
             loadScript('practice.js')
         });
+        document.getElementById('button_56_then()_call').addEventListener('click',function(){
+            loadScript('56_then()_call.js')
+        }) 
+        document.getElementById('button_58_promises_api').addEventListener('click',function(){
+            loadScript('58_promises_api.js')
+        })
+        document.getElementById('button_59_async_await').addEventListener('click',function(){
+            loadScript('59_async_await.js')
+        })
+
+
+
         function loadScript(src) {
             var script = document.createElement('script');
             script.src = src;
