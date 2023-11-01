@@ -47,6 +47,13 @@
     <input type="text" id="textInput">
     <button id="speakButton">Speak</button>
 
+
+
+    <div id="time">
+
+    </div>
+
+
     <script>
         // Check if the browser supports the Web Speech API
         if ('speechSynthesis' in window) {
@@ -73,6 +80,17 @@
         } else {
             alert('Your browser does not support the Web Speech API. Please use a different browser.');
         }
+
+
+
+
+        setInterval(()=>{
+            let d = new Date();
+            let time = document.getElementById('time')
+            time.innerHTML  = d
+            // console.log(time.innerHtML)
+
+        },1000)
     </script>
 </body>
 </html>

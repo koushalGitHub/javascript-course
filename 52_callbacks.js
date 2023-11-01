@@ -32,7 +32,7 @@ function doSomethingAsync(callback) {
     setTimeout(function() {
         console.log("Async operation completed");
         callback();
-    }, 5000);
+    }, 2000);
 }
 
 function callbackFunction() {

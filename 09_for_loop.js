@@ -36,6 +36,8 @@ let obj = {
 }
 
 for(let b in obj){
+    console.log("check obj[b] =>",obj[b]);    
+    console.log("check b =>",b);    
     console.log("Marks of "+b+ " is " + obj[b])
 }
 
@@ -62,3 +64,5 @@ for (const key in person) {
         console.log(key,person[key]);
     
 }
+
+
